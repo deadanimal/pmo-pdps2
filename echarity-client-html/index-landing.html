@@ -51,6 +51,14 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <link
+      href="color-switcher/css/color-switcher.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="color-switcher/js/color-switcher.js"></script>
+
     <!-- CSS | Preloader Styles -->
     <link href="css/preloader.css" rel="stylesheet" type="text/css" />
     <!-- CSS | Custom Margin Padding Collection -->
@@ -122,7 +130,7 @@
         >
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-8">
                 <div class="widget no-border m-0">
                   <ul
                     class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
@@ -178,11 +186,13 @@
                         </select>
                       </span>
                     </li>
-                    <li></li>
+                    <li>
+                      <input class="form-control" placeholder="Search" />
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <div class="widget no-border m-0">
                   <ul
                     class="list-inline pull-right flip sm-pull-none sm-text-center mt-5"
@@ -231,13 +241,9 @@
           <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
             <div class="container">
               <nav id="menuzord-right" class="menuzord green no-bg">
-                    <a
-                      class="menuzord-brand pull-left flip"
-                      href="javascript:void(0)"
-                      style="margin-top: 8px !important"
-                    >
-                      <img src="images/logo-jata2.jpeg" alt="" />
-                    </a>
+                <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
+                  <img src="images/logo-jata2.png" alt="">
+                </a>
                 <ul class="menuzord-menu">
                   <li>
                     <a href="#home">Perlindungan Sosial</a>
@@ -630,11 +636,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      <a
+                      <!-- <a
                         class="btn btn-colored btn-lg btn-theme-colored pl-20 pr-20"
                         href="#"
                         >Pautan</a
-                      >
+                      > -->
                     </div>
                   </li>
 
@@ -777,12 +783,12 @@
                         letter-spacing: 1px;
                       "
                     >
-                      <a
+                      <!-- <a
                         class="btn btn-colored btn-lg btn-flat btn-theme-colored pl-20 pr-20"
                         href="#"
                       >
-                        <!-- Pautan -->
-                      </a>
+                        Pautan
+                      </a> -->
                     </div>
                   </li>
                 </ul>
@@ -1824,19 +1830,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
               <div class="widget dark">
-                <h5 class="widget-title line-bottom">Useful Links</h5>
-                <ul class="list angle-double-right list-border">
-                  <li><a href="#">Body Building</a></li>
-                  <li><a href="#">Fitness Classes</a></li>
-                  <li><a href="#">Weight lifting</a></li>
-                  <li><a href="#">Yoga Courses</a></li>
-                  <li><a href="#">Training</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="widget dark">
-                <h5 class="widget-title line-bottom">Latest News</h5>
+                <h5 class="widget-title line-bottom">Berita Terkini</h5>
                 <div class="latest-posts">
                   <article class="post media-post clearfix pb-0 mb-10">
                     <a href="#" class="post-thumb">
@@ -1883,12 +1877,59 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="widget dark">
+                <h5 class="widget-title line-bottom">Jumlah Pengunjung</h5>
+                <ul class="list angle-double-right list-border">
+                  <li>
+                    <div class="row">
+                      <div class="col-md-8"><a href="#">Semasa</a></div>
+                      <div class="col-md-4 text-right">
+                        <span class="badge badge-success">2</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-8"><a href="#">Hari Ini</a></div>
+                      <div class="col-md-4 text-right">
+                        <span class="badge badge-success">20</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-8"><a href="#">Minggu Ini</a></div>
+                      <div class="col-md-4 text-right">
+                        <span class="badge badge-success">200</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-8"><a href="#">Bulan Ini</a></div>
+                      <div class="col-md-4 text-right">
+                        <span class="badge badge-success">900</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-8"><a href="#">Tahun Ini</a></div>
+                      <div class="col-md-4 text-right">
+                        <span class="badge badge-success">5000</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <hr style="width: 100%; color: black" />
           <div class="row mt-30">
             <div class="col-md-4">
               <div class="widget dark">
-                <h5 class="widget-title mb-10">Email Us</h5>
+                <h5 class="widget-title mb-10">Email</h5>
                 <form
                   id="mailchimp-subscription-form-footer"
                   class="newsletter-form"
@@ -1951,7 +1992,7 @@
             </div>
             <div class="col-md-4">
               <div class="widget dark">
-                <h5 class="widget-title mb-10">Call Us Now</h5>
+                <h5 class="widget-title mb-10">Hubungi Kami</h5>
                 <div class="text-gray">
                   <i class="fa fa-phone text-theme-colored mr-5"></i>
                   <a class="text-gray" href="#">603-8888 3904</a><br />
@@ -1962,7 +2003,8 @@
             </div>
             <div class="col-md-4">
               <div class="widget dark">
-                <h5 class="widget-title mb-10">Connect With Us</h5>
+                <h5 class="widget-title mb-10">
+                  Berhubung Dengan Kami</h5>
                 <ul class="styled-icons icon-dark icon-circled icon-sm">
                   <li>
                     <a href="#"><i class="fa fa-facebook"></i></a>
