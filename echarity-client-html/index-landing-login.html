@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <style>
   .media-post-bgcolor:hover {
-    background-color: lightcyan;
+    background-color: #adfcff;
   }
   /* Quick-zoom Container */
   /* .img-hover-zoom--quick-zoom img {
@@ -30,63 +30,10 @@
     width: 100px !important;
   }
 
-  /* start sidebar nav */
-
-  .customSideNav {
-    height: 70%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 100px;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    /* padding-top: 100px; */
-  }
-
-  .customSideNav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .customSideNav a:hover {
-    color: #f1f1f1;
-  }
-
-  .customSideNav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  @media screen and (max-height: 450px) {
-    .customSideNav {
-      padding-top: 15px;
-    }
-    .customSideNav a {
-      font-size: 18px;
-    }
-  }
-  /* end sidebar nav */
-  /* start side menu nav icon */
-  i.stickyW3cIcon {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 250px;
-    width: 45px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    z-index: 1;
-    background-color: grey;
-  }
-  /* end side menu nav icon */
+  /* .icon-box:hover .icon.icon-lg:hover { */
+    /* height: 100px; */
+    /* width: 100px; */
+  /* } */
 </style>
 <html dir="ltr" lang="en">
   <head>
@@ -211,90 +158,6 @@
         </div> -->
       </div>
 
-      <!-- <img class="stickyW3cIcon" src="images/faces/child.jpg" alt="Avatar" /> -->
-
-      <!-- start side menu -->
-      <i
-        class="fa fa-wheelchair fa-3x stickyW3cIcon"
-        id="w3cIcon"
-        style="cursor: pointer"
-      >
-      </i>
-
-      <div id="mySideCustomnav" class="customSideNav" style="display: none">
-        <span
-          class="text-center"
-          data-margin-top="-30px"
-          data-padding-top="-30px"
-        >
-          <h3 class="text-white">W3C</h3>
-        </span>
-        <div class="widget no-border text-center">
-          <ul
-            class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
-          >
-            <li style="padding-right: 20px">
-              <img
-                src="images/color/1ebebb.png"
-                style="width: 40px; height: 40px; border: 2px solid #fff"
-                alt=""
-              />
-            </li>
-            <li style="padding-right: 20px">
-              <img
-                src="images/color/982d58.png"
-                style="width: 40px; height: 40px; border: 2px solid #fff"
-                alt=""
-              />
-            </li>
-            <li style="padding-right: 20px">
-              <img
-                src="images/color/e06100.png"
-                style="width: 40px; height: 40px; border: 2px solid #fff"
-                alt=""
-              />
-            </li>
-          </ul>
-        </div>
-        <div class="widget no-border text-center">
-          <ul
-            class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
-          >
-            <li style="padding-right: 13px">
-              <button class="btn btn-secondary text-black">A+</button>
-            </li>
-            <li style="padding-right: 13px">
-              <button class="btn btn-secondary text-black">A-</button>
-            </li>
-          </ul>
-        </div>
-        <div class="widget no-border text-center">
-          <ul
-            class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
-          >
-            <li>
-              <span style="align-items: center">
-                <select class="form-control">
-                  <option>Arial</option>
-                  <option>Times New Roman</option>
-                </select>
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div class="widget no-border text-center">
-          <ul
-            class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
-          >
-            <li>
-              <input class="form-control" placeholder="Search" />
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- end side menu -->
-
       <!-- Header -->
       <header class="header">
         <div
@@ -303,7 +166,68 @@
         >
           <div class="container">
             <div class="row">
-              <div class="col-md-8"></div>
+              <div class="col-md-8">
+                <div class="widget no-border m-0">
+                  <ul
+                    class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
+                  >
+                    <li style="padding-right: 13px">
+                      <img
+                        src="images/color/1ebebb.png"
+                        style="
+                          width: 25px;
+                          height: 25px;
+                          border: 2px solid #fff;
+                        "
+                        alt=""
+                      />
+                    </li>
+                    <li style="padding-right: 13px">
+                      <img
+                        src="images/color/982d58.png"
+                        style="
+                          width: 25px;
+                          height: 25px;
+                          border: 2px solid #fff;
+                        "
+                        alt=""
+                      />
+                    </li>
+                    <li style="padding-right: 13px">
+                      <img
+                        src="images/color/e06100.png"
+                        style="
+                          width: 25px;
+                          height: 25px;
+                          border: 2px solid #fff;
+                        "
+                        alt=""
+                      />
+                    </li>
+                    <li style="padding-right: 13px">
+                      <button class="btn btn-sm btn-secondary text-black">
+                        A+
+                      </button>
+                    </li>
+                    <li style="padding-right: 13px">
+                      <button class="btn btn-sm btn-secondary text-black">
+                        A-
+                      </button>
+                    </li>
+                    <li>
+                      <span style="align-items: center">
+                        <select class="form-control">
+                          <option>Arial</option>
+                          <option>Times New Roman</option>
+                        </select>
+                      </span>
+                    </li>
+                    <li>
+                      <input class="form-control" placeholder="Search" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="col-md-4">
                 <div class="widget no-border m-0">
                   <ul
@@ -425,17 +349,6 @@
                       </li>
                     </ul>
                   </li>
-
-                  <li>
-                    <ul class="text-white">
-                      <li>
-                        <img
-                          src="images/faces/avatar.png"
-                          style="width: 35px; height: 35px; border-radius: 50%"
-                        />
-                      </li>
-                    </ul>
-                  </li>
                 </ul>
               </nav>
             </div>
@@ -445,318 +358,61 @@
 
       <!-- Start main-content -->
       <div class="main-content">
-        <!-- Section: banner / news -->
-        <section id="about4">
-          <div
-            class="container-fluid"
-            data-margin-top="-90px"
-            data-margin-bottom="-20px"
-          >
-            <div class="section-content">
-              <div class="row mt-50">
-                <div
-                  class="col-sm-12 col-md-4"
-                  style="overflow: scroll; height: 400px"
-                >
-                  <!-- <h3 class="text-uppercase  line-bottom mt-0 letter-space-2">Next <span class="text-theme-colored"> Event</span></h3> -->
-                  <div style="overflow: scroll">
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20">
-                        <img alt="" src="http://placehold.it/120x120" />
-                      </a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-8 wow fadeInUp animation-delay4">
-                  <!-- <h3 class="text-uppercase line-bottom mt-0">Featured <span class="text-theme-colored"> Project</span></h3> -->
-                  <div class="owl-carousel-1col" data-nav="true">
-                    <div class="item">
-                      <div class="box-hover-effect effect1 mb-sm-30">
-                        <div class="thumb">
-                          <a href="#">
-                            <img
-                              class="img-fullwidth mb-10"
-                              style="height: 400px !important"
-                              src="images/banner/banner1.jpeg"
-                              alt="..."
-                            />
-                          </a>
-                        </div>
-                        <!-- <div class="caption">
-                          <h4 class="text-uppercase letter-space-1 mt-0">Charity<span class="text-theme-colored"> Hospital</span></h4>
-                          <p>Quam distinctio quis perspiciatis facere accusamus perferendis eligendi odit cum nemo fugit, tenetur</p>
-                          <p>
-                          <a href="#" class="btn btn-theme-colored btn-flat mt-5 btn-sm" role="button">Donate</a>
-                          <span class="pull-right ml-10 mt-12 font-14">Goal: $2500</span>
-                          </p>
-                        </div> -->
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="box-hover-effect effect1 mb-sm-30">
-                        <div class="thumb">
-                          <a href="#">
-                            <img
-                              class="img-fullwidth mb-10"
-                              style="height: 400px !important"
-                              src="images/banner/banner2.jpeg"
-                              alt="..."
-                            />
-                          </a>
-                        </div>
-                        <!-- <div class="caption">
-                          <h4 class="text-uppercase letter-space-1 mt-0">Charity<span class="text-theme-colored"> Hospital</span></h4>
-                          <p>Quam distinctio quis perspiciatis facere accusamus perferendis eligendi odit cum nemo fugit, tenetur</p>
-                          <p>
-                          <a href="#" class="btn btn-theme-colored btn-flat mt-5 btn-sm" role="button">Donate</a>
-                          <span class="pull-right ml-10 mt-12 font-14">Goal: $2500</span>
-                          </p>
-                        </div> -->
-                      </div>
-                    </div>
-                  </div>
+
+        <!-- Section: inner-header -->
+        <section class="inner-header divider parallax layer-overlay overlay-white-8" data-bg-img="images/color/bg.jpg">
+          <div class="container pt-90 pb-50">
+            <!-- Section Content -->
+            <div class="section-content pt-100">
+              <div class="row"> 
+                <div class="col-md-12">
+                  <h3 class="title text-theme-colored">My Account</h3>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Section: Kumpulan Sasar -->
-        <section style="background-color:#cfcfcf">
-          <div class="container pt-10">
-            <div class="section-title">
-              <div class="row">
-                <div class="col text-center">
-                  <h2>Kumpulan Sasaran</h2>
-                </div>
-              </div>
-            </div>
-            <div class="section-content">
-              <div class="row">
-                <div class="col-md-4 media-post-bgcolor img-hover-zoom">
-                  <div
-                    class="icon-box bg-transparent text-center p-30 mt-sm-0"
-                    data-margin-top="-10px"
-                  >
-                    <a
-                      class="icon icon-lg bg-theme-colored icon-circled effect-circled text-white"
-                      href="#"
-                    >
-                      <img
-                        src="images/faces/child.jpg"
-                        style="width: 100%; height: 100px; border-radius: 50%"
-                        alt=""
-                      />
-                    </a>
-                    <h4 class="icon-box-title text-uppercase letter-space-3">
-                      <a class="text-theme-colored" href="#">Give Donation</a>
-                    </h4>
-                    <p class="text-black">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Molestias non nulla placeat, odio, qui dicta alias.
-                    </p>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-push-3">
+                <h4 class="text-gray mt-0 pt-5"> Login</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+                <form name="login-form" class="clearfix">
+                  <div class="row">
+                    <div class="form-group col-md-12">
+                      <label for="form_username_email">Username/Email</label>
+                      <input id="form_username_email" name="form_username_email" class="form-control" type="text">
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-4 media-post-bgcolor img-hover-zoom">
-                  <div
-                    class="icon-box bg-transparent text-center p-30 mt-sm-0"
-                    data-margin-top="-10px"
-                  >
-                    <a
-                      class="icon icon-lg bg-theme-colored icon-circled effect-circled text-white"
-                      href="#"
-                    >
-                      <img
-                        src="images/faces/adult.jpg"
-                        alt=""
-                        style="width: 100%; height: 100px; border-radius: 50%"
-                      />
-                    </a>
-                    <h4 class="icon-box-title text-uppercase letter-space-3">
-                      <a class="text-theme-colored" href="#"
-                        >Give Scholarship</a
-                      >
-                    </h4>
-                    <p class="text-black">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Molestias non nulla placeat, odio, qui dicta alias.
-                    </p>
+                  <div class="row">
+                    <div class="form-group col-md-12">
+                      <label for="form_password">Password</label>
+                      <input id="form_password" name="form_password" class="form-control" type="text">
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-4 media-post-bgcolor img-hover-zoom">
-                  <div
-                    class="icon-box bg-transparent text-center p-30 mt-sm-0"
-                    data-margin-top="-10px"
-                  >
-                    <a
-                      class="icon icon-lg bg-theme-colored icon-circled effect-circled text-white"
-                      href="#"
-                    >
-                      <img
-                        src="images/faces/old.jpg"
-                        alt=""
-                        style="width: 100%; height: 100px; border-radius: 50%"
-                      />
-                    </a>
-                    <h4 class="icon-box-title text-uppercase letter-space-3">
-                      <a class="text-theme-colored" href="#">Adopt a Child</a>
-                    </h4>
-                    <p class="text-black">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Molestias non nulla placeat, odio, qui dicta alias.
-                    </p>
+                  <div class="checkbox pull-left mt-15">
+                    <label for="form_checkbox">
+                      <input id="form_checkbox" name="form_checkbox" type="checkbox">
+                      Remember me </label>
                   </div>
-                </div>
+                  <div class="form-group pull-right mt-10">
+                    <button type="submit" class="btn btn-dark btn-sm">Login</button>
+                  </div>
+                  <div class="clear text-center pt-10">
+                    <a class="text-theme-colored font-weight-600 font-12" href="#">Forgot Your Password?</a>
+                  </div>
+                  <div class="clear text-center pt-10">
+                    <a class="btn btn-dark btn-lg btn-block no-border mt-15 mb-15" href="#" data-bg-color="#3b5998">Login with facebook</a>
+                    <a class="btn btn-dark btn-lg btn-block no-border" href="#" data-bg-color="#00acee">Login with twitter</a>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- <i class="fa fa-wheelchair stickyW3cIcon" style="
-        position: relative;
-        min-width: 960px;
-        font-size: 30px;
-        cursor: pointer;
-      " aria-hidden="true" onclick="openNav()"></i> -->
       </div>
       <!-- end main-content -->
 
@@ -1284,31 +940,157 @@
   </div>
 </div>
 
-<!-- <script>
-  function openNav() {
-    document.getElementById("mySideCustomnav").style.width = "250px";
-    document.getElementById("w3cIcon").style.marginLeft = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySideCustomnav").style.width = "0";
-    document.getElementById("w3cIcon").style.marginLeft = "0";
-  }
-</script> -->
 <script>
   $(document).ready(function () {
     // $("#myModal").modal("show");
 
-    $("#w3cIcon").click(function () {
-      console.log($("#mySideCustomnav").css("display") == "none");
-      if ($("#mySideCustomnav").css("display") == "none") {
-        $("#mySideCustomnav")
-          .show()
-          .css({ width: "250px", transition: "0.5s" });
-        $("#w3cIcon").css({ marginLeft: "250px", transition: "0.5s" });
+    // kategori kanak kanak
+    $(".kategoriKanak").click(function () {
+      console.log($("#myKanakkanak").css("display"));
+      if ($("#myKanakkanak").css("display") == "none") {
+        $("#myKanakkanak").show();
       } else {
-        $("#mySideCustomnav").hide().css({ width: "0", transition: "0.5s" });
-        $("#w3cIcon").css({ marginLeft: "0", transition: "0.5s" });
+        $("#myKanakkanak").hide();
+      }
+
+      $("#myDewasa").hide();
+      $("#myWargaemas").hide();
+    });
+    //sub kategori kanak kanak oku
+    $(".subKategoriKanakOku").click(function () {
+      console.log($("#mySubOkukanak").css("display"));
+      if ($("#mySubOkukanak").css("display") == "none") {
+        $("#mySubOkukanak").show();
+      } else {
+        $("#mySubOkukanak").hide();
+      }
+
+      $("#mySubKesihatankanak").hide();
+    });
+    //sub kategori kanal kanak Kesihatan
+    $(".subKategoriKanakKesihatan").click(function () {
+      console.log($("#mySubKesihatankanak").css("display"));
+      if ($("#mySubKesihatankanak").css("display") == "none") {
+        $("#mySubKesihatankanak").show();
+      } else {
+        $("#mySubKesihatankanak").hide();
+      }
+
+      $("#mySubOkukanak").hide();
+    });
+
+    // kategori dewasa
+    $(".kategoriDewasa").click(function () {
+      console.log($("#myDewasa").css("display"));
+      if ($("#myDewasa").css("display") == "none") {
+        $("#myDewasa").show();
+      } else {
+        $("#myDewasa").hide();
+      }
+      $("#myKanakkanak").hide();
+      $("#myWargaemas").hide();
+    });
+    //sub kategori dewasa oku
+    $(".subKategoriDewasaOku").click(function () {
+      console.log($("#mySubOkuDewasa").css("display"));
+      if ($("#mySubOkuDewasa").css("display") == "none") {
+        $("#mySubOkuDewasa").show();
+      } else {
+        $("#mySubOkuDewasa").hide();
+      }
+      $("#mySubKesihatanDewasa").hide();
+      $("#mySubInsuransDewasa").hide();
+    });
+    //sub kategori dewasa Kesihatan
+    $(".subKategoriDewasaKesihatan").click(function () {
+      console.log($("#mySubKesihatanDewasa").css("display"));
+      if ($("#mySubKesihatanDewasa").css("display") == "none") {
+        $("#mySubKesihatanDewasa").show();
+      } else {
+        $("#mySubKesihatanDewasa").hide();
+      }
+
+      $("#mySubOkuDewasa").hide();
+      $("#mySubInsuransDewasa").hide();
+    });
+    //sub kategori dewasa insurans
+    $(".subKategoriDewasaInsurans").click(function () {
+      console.log($("#mySubInsuransDewasa").css("display"));
+      if ($("#mySubInsuransDewasa").css("display") == "none") {
+        $("#mySubInsuransDewasa").show();
+      } else {
+        $("#mySubInsuransDewasa").hide();
+      }
+
+      $("#mySubOkuDewasa").hide();
+      $("#mySubKesihatanDewasa").hide();
+    });
+
+    // kategori warga emas
+    $(".kategoriWargaemas").click(function () {
+      console.log($("#myWargaemas").css("display"));
+      if ($("#myWargaemas").css("display") == "none") {
+        $("#myWargaemas").show();
+      } else {
+        $("#myWargaemas").hide();
+      }
+      $("#myDewasa").hide();
+      $("#myKanakkanak").hide();
+    });
+    //sub kategori warga emas Oku
+    $(".subKategoriWargaemasOku").click(function () {
+      console.log($("#mySubOkuWargaemas").css("display"));
+      if ($("#mySubOkuWargaemas").css("display") == "none") {
+        $("#mySubOkuWargaemas").show();
+      } else {
+        $("#mySubOkuWargaemas").hide();
+      }
+
+      $("#mySubKesihatanWargaemas").hide();
+      $("#mySubKesihatanWargaemas").hide();
+    });
+    //sub kategori warga emas Kesihatan
+    $(".subKategoriWargaemasKesihatan").click(function () {
+      console.log($("#mySubKesihatanWargaemas").css("display"));
+      if ($("#mySubKesihatanWargaemas").css("display") == "none") {
+        $("#mySubKesihatanWargaemas").show();
+      } else {
+        $("#mySubKesihatanWargaemas").hide();
+      }
+
+      $("#mySubOkuWargaemas").hide();
+      $("#mySubKebajikanWargaemas").hide();
+    });
+    //sub kategori warga emas Kebajikan
+    $(".subKategoriWargaemasKebajikan").click(function () {
+      console.log($("#mySubKebajikanWargaemas").css("display"));
+      if ($("#mySubKebajikanWargaemas").css("display") == "none") {
+        $("#mySubKebajikanWargaemas").show();
+      } else {
+        $("#mySubKebajikanWargaemas").hide();
+      }
+
+      $("#mySubOkuWargaemas").hide();
+      $("#mySubKesihatanWargaemas").hide();
+    });
+
+    /// check for jantina
+    $(".checkButtonJantina").click(function () {
+      console.log($("#buttonJantina").css("display"));
+      if ($("#buttonJantina").css("display") == "none") {
+        $("#buttonJantina").show();
+      } else {
+        $("#buttonJantina").hide();
+      }
+    });
+
+    /// button Carian
+    $(".checkButtonCarian").click(function () {
+      console.log($("#buttonCarian").css("display"));
+      if ($("#buttonCarian").css("display") == "none") {
+        $("#buttonCarian").show();
+      } else {
+        $("#buttonCarian").hide();
       }
     });
   });
