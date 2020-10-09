@@ -459,7 +459,7 @@
                   style="overflow: scroll; height: 400px"
                 >
                   <!-- <h3 class="text-uppercase  line-bottom mt-0 letter-space-2">Next <span class="text-theme-colored"> Event</span></h3> -->
-                  <div style="overflow: scroll">
+                  <div>
                     <article class="post media-post clearfix pb-0 mb-15">
                       <a href="#" class="post-thumb mr-20">
                         <img alt="" src="http://placehold.it/120x120" />
@@ -661,7 +661,7 @@
         </section>
 
         <!-- Section: Kumpulan Sasar -->
-        <section style="background-color:#cfcfcf">
+        <section style="background-color: #cfcfcf">
           <div class="container pt-10">
             <div class="section-title">
               <div class="row">
@@ -982,27 +982,65 @@
             </div>
             <div class="col-md-4">
               <div class="widget dark">
-                <h5 class="widget-title mb-10">Berhubung Dengan Kami</h5>
-                <ul class="styled-icons icon-dark icon-circled icon-sm">
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-skype"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                  </li>
-                </ul>
+                <h5 class="widget-title mb-10">Subscribe Us</h5>
+                <!-- Mailchimp Subscription Form Starts Here -->
+                <form
+                  id="mailchimp-subscription-form-footer"
+                  class="newsletter-form"
+                >
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      value=""
+                      name="EMAIL"
+                      placeholder="Your Email"
+                      class="form-control input-lg font-16"
+                      data-height="45px"
+                      id="mce-EMAIL-footer"
+                      style="height: 45px"
+                    />
+                    <span class="input-group-btn">
+                      <button
+                        data-height="45px"
+                        class="btn btn-colored btn-theme-colored btn-xs m-0 font-14"
+                        type="submit"
+                      >
+                        Subscribe
+                      </button>
+                    </span>
+                  </div>
+                </form>
+                <!-- Mailchimp Subscription Form Validation-->
+                <script type="text/javascript">
+                  $("#mailchimp-subscription-form-footer").ajaxChimp({
+                    callback: mailChimpCallBack,
+                    url:
+                      "//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e",
+                  });
+
+                  function mailChimpCallBack(resp) {
+                    // Hide any previous response text
+                    var $mailchimpform = $(
+                        "#mailchimp-subscription-form-footer"
+                      ),
+                      $response = "";
+                    $mailchimpform.children(".alert").remove();
+                    console.log(resp);
+                    if (resp.result === "success") {
+                      $response =
+                        '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+                        resp.msg +
+                        "</div>";
+                    } else if (resp.result === "error") {
+                      $response =
+                        '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+                        resp.msg +
+                        "</div>";
+                    }
+                    $mailchimpform.prepend($response);
+                  }
+                </script>
+                <!-- Mailchimp Subscription Form Ends Here -->
               </div>
             </div>
           </div>
@@ -1297,7 +1335,7 @@
 </script> -->
 <script>
   $(document).ready(function () {
-    // $("#myModal").modal("show");
+    $("#myModal").modal("show");
 
     $("#w3cIcon").click(function () {
       console.log($("#mySideCustomnav").css("display") == "none");
