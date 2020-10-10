@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <style>
   .media-post-bgcolor:hover {
-    background-color: lightcyan;
+    background-color: #b5e5ff;
   }
   /* Quick-zoom Container */
   /* .img-hover-zoom--quick-zoom img {
@@ -41,7 +41,7 @@
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     /* padding-top: 100px; */
   }
 
@@ -51,7 +51,7 @@
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    /* transition: 0.3s; */
   }
 
   .customSideNav a:hover {
@@ -81,6 +81,7 @@
     position: sticky;
     top: 250px;
     width: 45px;
+    padding-left: 3px;
     padding-top: 8px;
     padding-bottom: 8px;
     z-index: 1;
@@ -196,7 +197,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="">
+  <body>
     <div id="wrapper">
       <!-- preloader -->
       <div id="preloader">
@@ -274,7 +275,7 @@
           >
             <li>
               <span style="align-items: center">
-                <select class="form-control">
+                <select class="form-control" style="height: 35px">
                   <option>Arial</option>
                   <option>Times New Roman</option>
                 </select>
@@ -287,7 +288,11 @@
             class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
           >
             <li>
-              <input class="form-control" placeholder="Search" />
+              <input
+                class="form-control"
+                placeholder="Search"
+                style="height: 35px"
+              />
             </li>
           </ul>
         </div>
@@ -296,7 +301,8 @@
       <!-- end side menu -->
 
       <!-- Header -->
-      <header class="header">
+      <header class="header"
+      data-margin-top="-65px">
         <div
           class="header-top bg-black-222 sm-text-center"
           style="padding-top: 8px; padding-bottom: 5px"
@@ -446,165 +452,146 @@
       <!-- Start main-content -->
       <div class="main-content">
         <!-- Section: banner / news -->
-        <section id="about4">
-          <div
-            class="container-fluid"
-            data-margin-top="-90px"
-            data-margin-bottom="-20px"
-          >
+        <section id="about4" style="background-color: #ededed">
+          <div class="container-fluid mt-0 pt-0">
             <div class="section-content">
               <div class="row mt-50">
                 <div
                   class="col-sm-12 col-md-4"
-                  style="overflow: scroll; height: 400px"
+                  style="
+                    overflow: scroll;
+                    height: 400px;
+                    background-color: #e3e3e3;
+                    padding-top: 20px;
+                  "
                 >
                   <!-- <h3 class="text-uppercase  line-bottom mt-0 letter-space-2">Next <span class="text-theme-colored"> Event</span></h3> -->
-                  <div>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20">
-                        <img alt="" src="http://placehold.it/120x120" />
-                      </a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                    <article class="post media-post clearfix pb-0 mb-15">
-                      <a href="#" class="post-thumb mr-20"
-                        ><img alt="" src="http://placehold.it/120x120"
-                      /></a>
-                      <div class="post-right">
-                        <h4 class="mt-0 mb-5">
-                          <a href="#">Next Project Title</a>
-                        </h4>
-                        <ul class="list-inline font-12 mb-5">
-                          <li class="pr-0">
-                            <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
-                          </li>
-                          <li class="pl-5">
-                            <i class="fa fa-map-marker mr-5"></i>New York
-                          </li>
-                        </ul>
-                        <p class="mb-0 font-13">
-                          Lorem ipsum dolor sit amet nemo dicta allam nam.
-                        </p>
-                        <a class="text-theme-colored font-13" href="#"
-                          >Read More →</a
-                        >
-                      </div>
-                    </article>
-                  </div>
+                  <article class="post media-post clearfix pb-0 mb-15">
+                    <div class="post-right">
+                      <h4 class="mt-0 mb-5">
+                        <a href="#">Next Project Title</a>
+                      </h4>
+                      <ul class="list-inline font-12 mb-5">
+                        <li class="pr-0">
+                          <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
+                        </li>
+                        <li class="pl-5">
+                          <i class="fa fa-map-marker mr-5"></i>New York
+                        </li>
+                      </ul>
+                      <p class="mb-0 font-13">
+                        Lorem ipsum dolor sit amet nemo dicta allam nam.
+                      </p>
+                      <a class="text-theme-colored font-13" href="#"
+                        >Read More →</a
+                      >
+                    </div>
+                  </article>
+                  <article class="post media-post clearfix pb-0 mb-15">
+                    <div class="post-right">
+                      <h4 class="mt-0 mb-5">
+                        <a href="#">Next Project Title</a>
+                      </h4>
+                      <ul class="list-inline font-12 mb-5">
+                        <li class="pr-0">
+                          <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
+                        </li>
+                        <li class="pl-5">
+                          <i class="fa fa-map-marker mr-5"></i>New York
+                        </li>
+                      </ul>
+                      <p class="mb-0 font-13">
+                        Lorem ipsum dolor sit amet nemo dicta allam nam.
+                      </p>
+                      <a class="text-theme-colored font-13" href="#"
+                        >Read More →</a
+                      >
+                    </div>
+                  </article>
+                  <article class="post media-post clearfix pb-0 mb-15">
+                    <div class="post-right">
+                      <h4 class="mt-0 mb-5">
+                        <a href="#">Next Project Title</a>
+                      </h4>
+                      <ul class="list-inline font-12 mb-5">
+                        <li class="pr-0">
+                          <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
+                        </li>
+                        <li class="pl-5">
+                          <i class="fa fa-map-marker mr-5"></i>New York
+                        </li>
+                      </ul>
+                      <p class="mb-0 font-13">
+                        Lorem ipsum dolor sit amet nemo dicta allam nam.
+                      </p>
+                      <a class="text-theme-colored font-13" href="#"
+                        >Read More →</a
+                      >
+                    </div>
+                  </article>
+                  <article class="post media-post clearfix pb-0 mb-15">
+                    <div class="post-right">
+                      <h4 class="mt-0 mb-5">
+                        <a href="#">Next Project Title</a>
+                      </h4>
+                      <ul class="list-inline font-12 mb-5">
+                        <li class="pr-0">
+                          <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
+                        </li>
+                        <li class="pl-5">
+                          <i class="fa fa-map-marker mr-5"></i>New York
+                        </li>
+                      </ul>
+                      <p class="mb-0 font-13">
+                        Lorem ipsum dolor sit amet nemo dicta allam nam.
+                      </p>
+                      <a class="text-theme-colored font-13" href="#"
+                        >Read More →</a
+                      >
+                    </div>
+                  </article>
+                  <article class="post media-post clearfix pb-0 mb-15">
+                    <div class="post-right">
+                      <h4 class="mt-0 mb-5">
+                        <a href="#">Next Project Title</a>
+                      </h4>
+                      <ul class="list-inline font-12 mb-5">
+                        <li class="pr-0">
+                          <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
+                        </li>
+                        <li class="pl-5">
+                          <i class="fa fa-map-marker mr-5"></i>New York
+                        </li>
+                      </ul>
+                      <p class="mb-0 font-13">
+                        Lorem ipsum dolor sit amet nemo dicta allam nam.
+                      </p>
+                      <a class="text-theme-colored font-13" href="#"
+                        >Read More →</a
+                      >
+                    </div>
+                  </article>
+                  <article class="post media-post clearfix pb-0 mb-15">
+                    <div class="post-right">
+                      <h4 class="mt-0 mb-5">
+                        <a href="#">Next Project Title</a>
+                      </h4>
+                      <ul class="list-inline font-12 mb-5">
+                        <li class="pr-0">
+                          <i class="fa fa-calendar mr-5"></i> June 26, 2016 |
+                        </li>
+                        <li class="pl-5">
+                          <i class="fa fa-map-marker mr-5"></i>New York
+                        </li>
+                      </ul>
+                      <p class="mb-0 font-13">
+                        Lorem ipsum dolor sit amet nemo dicta allam nam.
+                      </p>
+                      <a class="text-theme-colored font-13" href="#"
+                        >Read More →</a
+                      >
+                    </div>
+                  </article>
                 </div>
                 <div class="col-sm-12 col-md-8 wow fadeInUp animation-delay4">
                   <!-- <h3 class="text-uppercase line-bottom mt-0">Featured <span class="text-theme-colored"> Project</span></h3> -->
@@ -661,8 +648,8 @@
         </section>
 
         <!-- Section: Kumpulan Sasar -->
-        <section style="background-color: #cfcfcf">
-          <div class="container pt-10">
+        <section style="background-color: white">
+          <div class="container pt-0 pb-0">
             <div class="section-title">
               <div class="row">
                 <div class="col text-center">
@@ -670,12 +657,21 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="pt-20 pb-20">
+          <div class="container pt-0 pb-0">
             <div class="section-content">
               <div class="row">
-                <div class="col-md-4 media-post-bgcolor img-hover-zoom">
+                <div class="col-md-4">
                   <div
-                    class="icon-box bg-transparent text-center p-30 mt-sm-0"
-                    data-margin-top="-10px"
+                    class="icon-box bg-transparent text-center p-60 mt-sm-0 border-1px media-post-bgcolor img-hover-zoom"
+                    style="
+                      margin-bottom: 0 !important;
+                      padding-left: -80px;
+                      padding-right: -80px;
+                    "
                   >
                     <a
                       class="icon icon-lg bg-theme-colored icon-circled effect-circled text-white"
@@ -696,10 +692,14 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-md-4 media-post-bgcolor img-hover-zoom">
+                <div class="col-md-4">
                   <div
-                    class="icon-box bg-transparent text-center p-30 mt-sm-0"
-                    data-margin-top="-10px"
+                    class="icon-box bg-transparent text-center p-60 mt-sm-0 border-1px media-post-bgcolor img-hover-zoom"
+                    style="
+                      margin-bottom: 0 !important;
+                      padding-left: -80px;
+                      padding-right: -80px;
+                    "
                   >
                     <a
                       class="icon icon-lg bg-theme-colored icon-circled effect-circled text-white"
@@ -722,10 +722,14 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-md-4 media-post-bgcolor img-hover-zoom">
+                <div class="col-md-4">
                   <div
-                    class="icon-box bg-transparent text-center p-30 mt-sm-0"
-                    data-margin-top="-10px"
+                    class="icon-box bg-transparent text-center p-60 mt-sm-0 border-1px media-post-bgcolor img-hover-zoom"
+                    style="
+                      margin-bottom: 0 !important;
+                      padding-left: -80px;
+                      padding-right: -80px;
+                    "
                   >
                     <a
                       class="icon icon-lg bg-theme-colored icon-circled effect-circled text-white"
@@ -751,12 +755,17 @@
           </div>
         </section>
 
-        <!-- <i class="fa fa-wheelchair stickyW3cIcon" style="
-        position: relative;
-        min-width: 960px;
-        font-size: 30px;
-        cursor: pointer;
-      " aria-hidden="true" onclick="openNav()"></i> -->
+        <section style="background-color: white">
+          <div class="container pt-0 pb-0">
+            <div class="section-title">
+              <div class="row">
+                <div class="col text-center">
+                  <h2></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- end main-content -->
 
@@ -982,7 +991,7 @@
             </div>
             <div class="col-md-4">
               <div class="widget dark">
-                <h5 class="widget-title mb-10">Subscribe Us</h5>
+                <h5 class="widget-title mb-10">Maklum Balas</h5>
                 <!-- Mailchimp Subscription Form Starts Here -->
                 <form
                   id="mailchimp-subscription-form-footer"
@@ -993,7 +1002,7 @@
                       type="email"
                       value=""
                       name="EMAIL"
-                      placeholder="Your Email"
+                      placeholder="Maklum Balas"
                       class="form-control input-lg font-16"
                       data-height="45px"
                       id="mce-EMAIL-footer"
@@ -1005,7 +1014,7 @@
                         class="btn btn-colored btn-theme-colored btn-xs m-0 font-14"
                         type="submit"
                       >
-                        Subscribe
+                        Maklum Balas
                       </button>
                     </span>
                   </div>
@@ -1321,33 +1330,32 @@
     </div>
   </div>
 </div>
-
-<!-- <script>
-  function openNav() {
-    document.getElementById("mySideCustomnav").style.width = "250px";
-    document.getElementById("w3cIcon").style.marginLeft = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySideCustomnav").style.width = "0";
-    document.getElementById("w3cIcon").style.marginLeft = "0";
-  }
-</script> -->
 <script>
   $(document).ready(function () {
-    $("#myModal").modal("show");
+    // $("#myModal").modal("show");
 
     $("#w3cIcon").click(function () {
       console.log($("#mySideCustomnav").css("display") == "none");
       if ($("#mySideCustomnav").css("display") == "none") {
-        $("#mySideCustomnav")
-          .show()
-          .css({ width: "250px", transition: "0.5s" });
-        $("#w3cIcon").css({ marginLeft: "250px", transition: "0.5s" });
+        $("#mySideCustomnav").show().css({ width: "200px" });
+        $("#w3cIcon").css({ marginLeft: "200px" });
       } else {
-        $("#mySideCustomnav").hide().css({ width: "0", transition: "0.5s" });
-        $("#w3cIcon").css({ marginLeft: "0", transition: "0.5s" });
+        $("#mySideCustomnav").hide().css({ width: "0" });
+        $("#w3cIcon").css({ marginLeft: "0" });
       }
     });
   });
+
+  // $("#w3cIcon").click(function () {
+  //     console.log($("#mySideCustomnav").css("display") == "none");
+  //     if ($("#mySideCustomnav").css("display") == "none") {
+  //       $("#mySideCustomnav")
+  //         .show()
+  //         .css({ width: "250px", transition: "0.5s" });
+  //       $("#w3cIcon").css({ marginLeft: "250px", transition: "0.5s" });
+  //     } else {
+  //       $("#mySideCustomnav").hide().css({ width: "0", transition: "0.5s" });
+  //       $("#w3cIcon").css({ marginLeft: "0", transition: "0.5s" });
+  //     }
+  //   });
 </script>
