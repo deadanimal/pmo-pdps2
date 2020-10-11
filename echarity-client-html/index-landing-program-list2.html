@@ -24,6 +24,11 @@
   .img-hover-zoom:hover img {
     transform: scale(1.3);
   }
+  .icon-box {
+    border: black 1px !important ;
+    z-index: 1 !important;
+    background-color: #dedede;
+  }
 
   .icon-box .icon.icon-lg {
     height: 100px !important;
@@ -33,7 +38,7 @@
   /* start sidebar nav */
 
   .customSideNav {
-    height: 70%;
+    height: 40%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -230,71 +235,51 @@
         >
           <h3 class="text-white">W3C</h3>
         </span>
-        <div class="widget no-border text-center">
-          <ul
-            class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
-          >
-            <li style="padding-right: 20px">
+        <hr style="width: 100%; color: grey" />
+        <div style="padding-bottom: 30px">
+          <div class="row" style="margin-left: 10px; margin-right: 10px">
+            <div class="col-md-4 text-center">
               <img
                 src="images/color/1ebebb.png"
-                style="width: 40px; height: 40px; border: 2px solid #fff"
+                style="width: 30px; height: 30px; border: 2px solid #fff"
                 alt=""
               />
-            </li>
-            <li style="padding-right: 20px">
+            </div>
+            <div class="col-md-4 text-center">
               <img
                 src="images/color/982d58.png"
-                style="width: 40px; height: 40px; border: 2px solid #fff"
+                style="width: 30px; height: 30px; border: 2px solid #fff"
                 alt=""
               />
-            </li>
-            <li style="padding-right: 20px">
+            </div>
+            <div class="col-md-4 text-center">
               <img
                 src="images/color/e06100.png"
-                style="width: 40px; height: 40px; border: 2px solid #fff"
+                style="width: 30px; height: 30px; border: 2px solid #fff"
                 alt=""
               />
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-        <div class="widget no-border text-center">
-          <ul
-            class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
-          >
-            <li style="padding-right: 13px">
-              <button class="btn btn-secondary text-black">A+</button>
-            </li>
-            <li style="padding-right: 13px">
-              <button class="btn btn-secondary text-black">A-</button>
-            </li>
-          </ul>
+        <div style="padding-bottom: 30px; padding-left: 30px">
+          <button class="btn btn-secondary text-black" style="width: 40%">
+            A-
+          </button>
+          <button class="btn btn-secondary text-black" style="width: 40%">
+            A+
+          </button>
         </div>
-        <div class="widget no-border text-center">
-          <ul
-            class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
-          >
-            <li>
-              <span style="align-items: center">
-                <select class="form-control" style="height: 35px">
-                  <option>Arial</option>
-                  <option>Times New Roman</option>
-                </select>
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div class="widget no-border text-center">
-          <ul
-            class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center"
-          >
-            <li>
-              <input
-                class="form-control"
-                placeholder="Search"
-                style="height: 35px"
-              />
-            </li>
-          </ul>
+        <div
+          style="padding-bottom: 30px; padding-left: 10px; padding-right: 10px"
+        >
+          <div class="row">
+            <div class="col-md-10">
+              <select class="form-control" style="height: 35px; width: 180px">
+                <option>Arial</option>
+                <option>Times New Roman</option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -365,6 +350,13 @@
                   <img src="images/logo-jata-putih.png" alt="" />
                 </a>
                 <ul class="menuzord-menu">
+                  <li>
+                    <input
+                      class="form-control"
+                      style="height: 35px; width: 150px"
+                      placeholder="Cari"
+                    />
+                  </li>
                   <li>
                     <a href="#home" class="text-white">Perlindungan Sosial</a>
                     <ul class="dropdown">
@@ -468,112 +460,198 @@
                       <div class="">
                         <ul class="list angle-double-right list-border">
                           <li>
-                            <!-- <span> -->
-                            <a data-toggle="collapse" href="#collapseOne"
-                              >Kanak - Kanak
+                            <a data-toggle="collapse" href="#collapseKanakOne">
+                              Kanak - Kanak
                             </a>
                             <!-- <span class="text-theme-colored">></span> -->
-                            <!-- </span> -->
+                            <hr />
                             <ul
-                              id="collapseOne"
-                              class="panel-collapse collapse in"
+                              id="collapseKanakOne"
+                              class="panel-collapse collapse"
                               role="tabpanel"
                               aria-labelledby="headingOne"
                             >
-                              <li style="border-bottom: 1px dashed #007bff">
-                                <a data-toggle="collapse" href="#collapseThree"
-                                  >rty
+                              <li>
+                                <a
+                                  data-toggle="collapse"
+                                  href="#collapseKanakThree"
+                                  >OKU
                                 </a>
+                                <hr />
                                 <ul
-                                  id="collapseThree"
-                                  class="panel-collapse collapse in"
+                                  id="collapseKanakThree"
+                                  class="panel-collapse collapse"
                                   role="tabpanel"
                                   aria-labelledby="headingOne"
                                 >
-                                  <li style="border-bottom: 1px dashed #007bff">
-                                    qwe
+                                  <li id="kanakBsh">
+                                    Bantuan Sara Hidup (BSH)
+                                    <hr />
                                   </li>
-                                  <li
-                                    style="border-bottom: 1px dashed #007bff"
-                                    width="20%"
-                                  >
-                                    asd
+                                  <li id="kanakMySalam">
+                                    Skim mySalam
+                                    <hr />
                                   </li>
                                 </ul>
                               </li>
-                              <li style="border-bottom: 1px dashed #007bff">
-                                <a data-toggle="collapse" href="#collapseFour"
-                                  >asd
+                              <li>
+                                <a
+                                  data-toggle="collapse"
+                                  href="#collapseKanakMySalam"
+                                  >Kesihatan
                                 </a>
+                                <hr />
                                 <ul
-                                  id="collapseFour"
-                                  class="panel-collapse collapse in"
+                                  id="collapseKanakMySalam"
+                                  class="panel-collapse collapse"
                                   role="tabpanel"
                                   aria-labelledby="headingOne"
                                 >
-                                  <li>qwe</li>
-                                  <li>asd</li>
+                                  <li id="kanakKesihatanBsh">
+                                    Bantuan Sara Hidup (BSH)
+                                    <hr />
+                                  </li>
+                                  <li id="kanakKesihatanMySalam">
+                                    Skim mySalam
+                                    <hr />
+                                  </li>
                                 </ul>
                               </li>
                             </ul>
                           </li>
-                          <li style="border-bottom: 1px dashed #007bff">
-                            <a href="#">Dewasa</a>
-                            <span class="text-theme-colored">></span>
-                          </li>
+                          
                           <li>
-                            <a href="#">Warga Emas</a>
-                            <span class="text-theme-colored">></span>
+                            <a data-toggle="collapse" href="#collapseDewasaOne">
+                              Dewasa
+                            </a>
+                            <!-- <span class="text-theme-colored">></span> -->
+                            <hr />
+                            <ul
+                              id="collapseDewasaOne"
+                              class="panel-collapse collapse"
+                              role="tabpanel"
+                              aria-labelledby="headingOne"
+                            >
+                              <li>
+                                <a
+                                  data-toggle="collapse"
+                                  href="#collapseDewasaThree"
+                                  >OKU
+                                </a>
+                                <hr />
+                                <ul
+                                  id="collapseDewasaThree"
+                                  class="panel-collapse collapse"
+                                  role="tabpanel"
+                                  aria-labelledby="headingOne"
+                                >
+                                  <li id="dewasaBsh">
+                                    Bantuan Sara Hidup (BSH)
+                                    <hr />
+                                  </li>
+                                  <li id="dewasaMySalam">
+                                    Skim mySalam
+                                    <hr />
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a
+                                  data-toggle="collapse"
+                                  href="#collapsedewasaMySalam"
+                                  >Kesihatan
+                                </a>
+                                <hr />
+                                <ul
+                                  id="collapsedewasaMySalam"
+                                  class="panel-collapse collapse"
+                                  role="tabpanel"
+                                  aria-labelledby="headingOne"
+                                >
+                                  <li id="dewasaKesihatanBsh">
+                                    Bantuan Sara Hidup (BSH)
+                                    <hr />
+                                  </li>
+                                  <li id="dewasaKesihatanMySalam">
+                                    Skim mySalam
+                                    <hr />
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
                           </li>
+
+                          <li>
+                            <a data-toggle="collapse" href="#collapseWargaOne">
+                              Warga Emas
+                            </a>
+                            <!-- <span class="text-theme-colored">></span> -->
+                            <hr />
+                            <ul
+                              id="collapseWargaOne"
+                              class="panel-collapse collapse"
+                              role="tabpanel"
+                              aria-labelledby="headingOne"
+                            >
+                              <li>
+                                <a
+                                  data-toggle="collapse"
+                                  href="#collapseWargaThree"
+                                  >OKU
+                                </a>
+                                <hr />
+                                <ul
+                                  id="collapseWargaThree"
+                                  class="panel-collapse collapse"
+                                  role="tabpanel"
+                                  aria-labelledby="headingOne"
+                                >
+                                  <li id="wargaBsh">
+                                    Bantuan Sara Hidup (BSH)
+                                    <hr />
+                                  </li>
+                                  <li id="wargaMySalam">
+                                    Skim mySalam
+                                    <hr />
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a
+                                  data-toggle="collapse"
+                                  href="#collapseWargaMySalam"
+                                  >Kesihatan
+                                </a>
+                                <hr />
+                                <ul
+                                  id="collapseWargaMySalam"
+                                  class="panel-collapse collapse"
+                                  role="tabpanel"
+                                  aria-labelledby="headingOne"
+                                >
+                                  <li id="wargaKesihatanBsh">
+                                    Bantuan Sara Hidup (BSH)
+                                    <hr />
+                                  </li>
+                                  <li id="wargaKesihatanMySalam">
+                                    Skim mySalam
+                                    <hr />
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <!-- 
-                  <div class="row">
-                    <div class="col">
-                      <div class="widget center-block">
-                        <div class="panel-group" id="accordion" role="tablist">
-                          <div class="panel panel-default">
-                            <div class="panel-heading active">
-                              <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#collapseOne">
-                                  Collapsible Group Item #1
-                                </a>
-                              </h4>
-                            </div>
-                            <div
-                              id="collapseOne"
-                              class="panel-collapse collapse in"
-                              role="tabpanel"
-                              aria-labelledby="headingOne"
-                            >
-                              <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod
-                                high life accusamus terry richardson ad squid. 3
-                                wolf moon officia aute, non cupidatat skateboard
-                                dolor brunch. Food truck quinoa nesciunt laborum
-                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-                                put a bird on it squid single-origin coffee
-                                nulla assumenda shoreditch et. Nihil anim
-                                keffiyeh helvetica, craft beer labore wes
-                                anderson cred nesciunt sapiente ea proident. Ad
-                                vegan excepteur butcher vice lomo. Leggings
-                                occaecat craft beer farm-to-table, raw denim
-                                aesthetic synth nesciunt you probably haven't
-                                heard of them accusamus labore sustainable VHS.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
                 </div>
-                <div class="col-md-8">
+
+                <div class="col-md-8" id="divBsh">
                   <div class="row">
                     <div class="col">
-                      <h3>Kanak - Kanak</h3>
+                      <h3>Bantuan Sara Hidup</h3>
                       <hr style="width: 100%; color: #007bff" />
                     </div>
                   </div>
@@ -595,6 +673,70 @@
                           <tr>
                             <td>Kumpulan Sasaran</td>
                             <td>: Warga Emas</td>
+                          </tr>
+                          <tr>
+                            <td>Kategori</td>
+                            <td>: Kebajikan Masyarakat</td>
+                          </tr>
+                          <tr>
+                            <td>Objektif Program</td>
+                            <td>: Bantuan isi rumah untuk rakyat Malaysia</td>
+                          </tr>
+                          <tr>
+                            <td>Kriteria/Syarat</td>
+                            <td>
+                              : Isi rumah pendapatan bulanan RM2000.00dan
+                              kebawah
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Manfaat</td>
+                            <td>: Wang Tunai</td>
+                          </tr>
+                          <tr>
+                            <td>Kos (RM)</td>
+                            <td>: 600.00</td>
+                          </tr>
+                          <tr>
+                            <td>Kekerapan</td>
+                            <td>: Sekali</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="text-right">
+                              <button class="btn btn-primary">Pautan</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-8" id="divMySalam" style="display: none">
+                  <div class="row">
+                    <div class="col">
+                      <h3>My Salam</h3>
+                      <hr style="width: 100%; color: #007bff" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-lg-12"></div>
+                    <div class="col-md-12 col-lg-12">
+                      <table
+                        class="table align-items-center table-flush table-hover text-black"
+                      >
+                        <tbody class="list">
+                          <tr>
+                            <td>Agensi</td>
+                            <td>: Kementerian Kewangan</td>
+                          </tr>
+                          <tr>
+                            <td>Nama Program</td>
+                            <td>: My Salam</td>
+                          </tr>
+                          <tr>
+                            <td>Kumpulan Sasaran</td>
+                            <td>: Semua</td>
                           </tr>
                           <tr>
                             <td>Kategori</td>
@@ -1164,171 +1306,7 @@
   </div>
 </div>
 <script>
-  // $(document).ready(function () {
-  //   $(".panel-collapse").on("show.bs.collapse", function () {
-  //     $(this).siblings(".panel-heading").addClass("active");
-  //   });
-
-  //   $(".panel-collapse").on("hide.bs.collapse", function () {
-  //     $(this).siblings(".panel-heading").removeClass("active");
-  //   });
-
-  //   // $("#myModal").modal("show");
-
-  //   // kategori kanak kanak
-  //   $(".kategoriKanak").click(function () {
-  //     console.log($("#myKanakkanak").css("display"));
-  //     if ($("#myKanakkanak").css("display") == "none") {
-  //       $("#myKanakkanak").show();
-  //     } else {
-  //       $("#myKanakkanak").hide();
-  //     }
-
-  //     $("#myDewasa").hide();
-  //     $("#myWargaemas").hide();
-  //   });
-  //   //sub kategori kanak kanak oku
-  //   $(".subKategoriKanakOku").click(function () {
-  //     console.log($("#mySubOkukanak").css("display"));
-  //     if ($("#mySubOkukanak").css("display") == "none") {
-  //       $("#mySubOkukanak").show();
-  //     } else {
-  //       $("#mySubOkukanak").hide();
-  //     }
-
-  //     $("#mySubKesihatankanak").hide();
-  //   });
-  //   //sub kategori kanal kanak Kesihatan
-  //   $(".subKategoriKanakKesihatan").click(function () {
-  //     console.log($("#mySubKesihatankanak").css("display"));
-  //     if ($("#mySubKesihatankanak").css("display") == "none") {
-  //       $("#mySubKesihatankanak").show();
-  //     } else {
-  //       $("#mySubKesihatankanak").hide();
-  //     }
-
-  //     $("#mySubOkukanak").hide();
-  //   });
-
-  //   // kategori dewasa
-  //   $(".kategoriDewasa").click(function () {
-  //     console.log($("#myDewasa").css("display"));
-  //     if ($("#myDewasa").css("display") == "none") {
-  //       $("#myDewasa").show();
-  //     } else {
-  //       $("#myDewasa").hide();
-  //     }
-  //     $("#myKanakkanak").hide();
-  //     $("#myWargaemas").hide();
-  //   });
-  //   //sub kategori dewasa oku
-  //   $(".subKategoriDewasaOku").click(function () {
-  //     console.log($("#mySubOkuDewasa").css("display"));
-  //     if ($("#mySubOkuDewasa").css("display") == "none") {
-  //       $("#mySubOkuDewasa").show();
-  //     } else {
-  //       $("#mySubOkuDewasa").hide();
-  //     }
-  //     $("#mySubKesihatanDewasa").hide();
-  //     $("#mySubInsuransDewasa").hide();
-  //   });
-  //   //sub kategori dewasa Kesihatan
-  //   $(".subKategoriDewasaKesihatan").click(function () {
-  //     console.log($("#mySubKesihatanDewasa").css("display"));
-  //     if ($("#mySubKesihatanDewasa").css("display") == "none") {
-  //       $("#mySubKesihatanDewasa").show();
-  //     } else {
-  //       $("#mySubKesihatanDewasa").hide();
-  //     }
-
-  //     $("#mySubOkuDewasa").hide();
-  //     $("#mySubInsuransDewasa").hide();
-  //   });
-  //   //sub kategori dewasa insurans
-  //   $(".subKategoriDewasaInsurans").click(function () {
-  //     console.log($("#mySubInsuransDewasa").css("display"));
-  //     if ($("#mySubInsuransDewasa").css("display") == "none") {
-  //       $("#mySubInsuransDewasa").show();
-  //     } else {
-  //       $("#mySubInsuransDewasa").hide();
-  //     }
-
-  //     $("#mySubOkuDewasa").hide();
-  //     $("#mySubKesihatanDewasa").hide();
-  //   });
-
-  //   // kategori warga emas
-  //   $(".kategoriWargaemas").click(function () {
-  //     console.log($("#myWargaemas").css("display"));
-  //     if ($("#myWargaemas").css("display") == "none") {
-  //       $("#myWargaemas").show();
-  //     } else {
-  //       $("#myWargaemas").hide();
-  //     }
-  //     $("#myDewasa").hide();
-  //     $("#myKanakkanak").hide();
-  //   });
-  //   //sub kategori warga emas Oku
-  //   $(".subKategoriWargaemasOku").click(function () {
-  //     console.log($("#mySubOkuWargaemas").css("display"));
-  //     if ($("#mySubOkuWargaemas").css("display") == "none") {
-  //       $("#mySubOkuWargaemas").show();
-  //     } else {
-  //       $("#mySubOkuWargaemas").hide();
-  //     }
-
-  //     $("#mySubKesihatanWargaemas").hide();
-  //     $("#mySubKesihatanWargaemas").hide();
-  //   });
-  //   //sub kategori warga emas Kesihatan
-  //   $(".subKategoriWargaemasKesihatan").click(function () {
-  //     console.log($("#mySubKesihatanWargaemas").css("display"));
-  //     if ($("#mySubKesihatanWargaemas").css("display") == "none") {
-  //       $("#mySubKesihatanWargaemas").show();
-  //     } else {
-  //       $("#mySubKesihatanWargaemas").hide();
-  //     }
-
-  //     $("#mySubOkuWargaemas").hide();
-  //     $("#mySubKebajikanWargaemas").hide();
-  //   });
-  //   //sub kategori warga emas Kebajikan
-  //   $(".subKategoriWargaemasKebajikan").click(function () {
-  //     console.log($("#mySubKebajikanWargaemas").css("display"));
-  //     if ($("#mySubKebajikanWargaemas").css("display") == "none") {
-  //       $("#mySubKebajikanWargaemas").show();
-  //     } else {
-  //       $("#mySubKebajikanWargaemas").hide();
-  //     }
-
-  //     $("#mySubOkuWargaemas").hide();
-  //     $("#mySubKesihatanWargaemas").hide();
-  //   });
-
-  //   /// check for jantina
-  //   $(".checkButtonJantina").click(function () {
-  //     console.log($("#buttonJantina").css("display"));
-  //     if ($("#buttonJantina").css("display") == "none") {
-  //       $("#buttonJantina").show();
-  //     } else {
-  //       $("#buttonJantina").hide();
-  //     }
-  //   });
-
-  //   /// button Carian
-  //   $(".checkButtonCarian").click(function () {
-  //     console.log($("#buttonCarian").css("display"));
-  //     if ($("#buttonCarian").css("display") == "none") {
-  //       $("#buttonCarian").show();
-  //     } else {
-  //       $("#buttonCarian").hide();
-  //     }
-  //   });
-  // });
-</script>
-<script>
   $(document).ready(function () {
-    // $("#myModal").modal("show");
 
     $("#w3cIcon").click(function () {
       console.log($("#mySideCustomnav").css("display") == "none");
@@ -1340,6 +1318,149 @@
         $("#w3cIcon").css({ marginLeft: "0" });
       }
     });
+
+    // kategori kanak kanak
+    $("#kanakBsh").click(function () {
+      console.log($("#divBsh").css("display"));
+      if ($("#divBsh").css("display") == "none") {
+        $("#divBsh").show();
+        $("#divMySalam").hide();
+        // } else {
+        //   $("#divBsh").hide();
+        //   $("#divMySalam").show();
+      }
+    });
+
+    $("#kanakMySalam").click(function () {
+      console.log($("#divMySalam").css("display"));
+      if ($("#divMySalam").css("display") == "none") {
+        $("#divMySalam").show();
+        $("#divBsh").hide();
+        // } else {
+        //   $("#divMySalam").hide();
+        //   $("#divBsh").show();
+      }
+    });
+
+    $("#kanakKesihatanBsh").click(function () {
+      console.log("kanakKesihatanBsh");
+      console.log($("#divBsh").css("display"));
+      if ($("#divBsh").css("display") == "none") {
+        $("#divBsh").show();
+        $("#divMySalam").hide();
+        // } else {
+        //   $("#divBsh").hide();
+        //   $("#divMySalam").show();
+      }
+    });
+
+    $("#kanakKesihatanMySalam").click(function () {
+      console.log("kanakKesihatanSalam");
+      console.log($("#divBsh").css("display"));
+      if ($("#divMySalam").css("display") == "none") {
+        $("#divBsh").hide();
+        $("#divMySalam").show();
+        // } else {
+        //   $("#divBsh").hide();
+        //   $("#divMySalam").show();
+      }
+    });
+  
+    // kategori dewasa
+    $("#dewasaBsh").click(function () {
+      console.log($("#divBsh").css("display"));
+      if ($("#divBsh").css("display") == "none") {
+        $("#divBsh").show();
+        $("#divMySalam").hide();
+        // } else {
+        //   $("#divBsh").hide();
+        //   $("#divMySalam").show();
+      }
+    });
+
+    $("#dewasaMySalam").click(function () {
+      console.log($("#divMySalam").css("display"));
+      if ($("#divMySalam").css("display") == "none") {
+        $("#divMySalam").show();
+        $("#divBsh").hide();
+        // } else {
+        //   $("#divMySalam").hide();
+        //   $("#divBsh").show();
+      }
+    });
+
+    $("#dewasaKesihatanBsh").click(function () {
+      console.log("dewasaKesihatanBsh");
+      console.log($("#divBsh").css("display"));
+      if ($("#divBsh").css("display") == "none") {
+        $("#divBsh").show();
+        $("#divMySalam").hide();
+        // } else {
+        //   $("#divBsh").hide();
+        //   $("#divMySalam").show();
+      }
+    });
+
+    $("#dewasaKesihatanMySalam").click(function () {
+      console.log("dewasaKesihatanSalam");
+      console.log($("#divBsh").css("display"));
+      if ($("#divMySalam").css("display") == "none") {
+        $("#divBsh").hide();
+        $("#divMySalam").show();
+        // } else {
+        //   $("#divBsh").hide();
+        //   $("#divMySalam").show();
+      }
+    });
+
+    
+    // kategori warga
+    $("#wargaBsh").click(function () {
+      console.log($("#divBsh").css("display"));
+      if ($("#divBsh").css("display") == "none") {
+        $("#divBsh").show();
+        $("#divMySalam").hide();
+        // } else {
+        //   $("#divBsh").hide();
+        //   $("#divMySalam").show();
+      }
+    });
+
+    $("#wargaMySalam").click(function () {
+      console.log($("#divMySalam").css("display"));
+      if ($("#divMySalam").css("display") == "none") {
+        $("#divMySalam").show();
+        $("#divBsh").hide();
+        // } else {
+        //   $("#divMySalam").hide();
+        //   $("#divBsh").show();
+      }
+    });
+
+    $("#wargaKesihatanBsh").click(function () {
+      console.log("wargaKesihatanBsh");
+      console.log($("#divBsh").css("display"));
+      if ($("#divBsh").css("display") == "none") {
+        $("#divBsh").show();
+        $("#divMySalam").hide();
+        // } else {
+        //   $("#divBsh").hide();
+        //   $("#divMySalam").show();
+      }
+    });
+
+    $("#wargaKesihatanMySalam").click(function () {
+      console.log("wargaKesihatanSalam");
+      console.log($("#divBsh").css("display"));
+      if ($("#divMySalam").css("display") == "none") {
+        $("#divBsh").hide();
+        $("#divMySalam").show();
+        // } else {
+        //   $("#divBsh").hide();
+        //   $("#divMySalam").show();
+      }
+    });
+
   });
 
   // $("#w3cIcon").click(function () {

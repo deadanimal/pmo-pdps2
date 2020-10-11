@@ -1135,113 +1135,53 @@
 <div id="myModal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body">
+      <div class="modal-header">
         <span class="text-right">
           <button type="button" class="close" data-dismiss="modal">
             &times;
           </button></span
         >
-        <div class="row">
-          <div class="col text-center" style="padding-bottom: 20px">
-            <h4>Selamat Datang</h4>
-          </div>
-        </div>
-        <p style="color: black">Sila Pilih Umur</p>
+        <span style="font-size: 1.1em;color: black;">Hi! Sila Masukkan Umur dan Jantina anda.</span>
+      </div>
+      <div class="modal-body">
         <div class="row">
           <div class="col-md-12">
             <div class="row">
-              <div class="col-md-4 checkButtonJantina">
-                <article class="post mb-30">
-                  <div class="clearfix"></div>
-                  <div class="entry-content">
-                    <h5 class="entry-title text-uppercase mt-0 text-center">
-                      <a class="font-15" href="#">0-18</a>
-                    </h5>
-                  </div>
-                </article>
+              <div class="col-md-3 text-right text-black">Umur :</div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    style="height: 25px"
+                    type="number"
+                  />
+                </div>
               </div>
-              <div class="col-md-4 checkButtonJantina">
-                <article class="post mb-30">
-                  <div class="clearfix"></div>
-                  <div class="entry-content">
-                    <h5 class="entry-title text-uppercase mt-0 text-center">
-                      <a class="font-15" href="#">19-59</a>
-                    </h5>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-4 checkButtonJantina">
-                <article class="post mb-30">
-                  <div class="clearfix"></div>
-                  <div class="entry-content">
-                    <h5 class="entry-title text-uppercase mt-0 text-center">
-                      <a class="font-15" href="#">60 Keatas</a>
-                    </h5>
-                  </div>
-                </article>
-              </div>
+              <div class="col-md-2 text-left text-black">Tahun</div>
             </div>
           </div>
         </div>
-        <div class="row" id="buttonJantina" style="display: none">
-          <div class="col-md-12">
-            <p style="color: black">Sila Pilih Jantina</p>
-          </div>
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-6 checkButtonCarian" style="cursor: pointer">
-                <article class="post mb-30">
-                  <!-- <div class="entry-header">
-                    <div class="post-thumb">
-                      <img
-                        class="img-fullwidth img-responsive"
-                        src="http://placehold.it/215x160"
-                        alt=""
-                      />
-                    </div>
-                  </div> -->
-                  <div class="clearfix"></div>
-                  <div class="entry-content">
-                    <h5 class="entry-title text-uppercase mt-0 text-center">
-                      <a class="font-15" href="#">Lelaki</a>
-                    </h5>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6 checkButtonCarian" style="cursor: pointer">
-                <article class="post mb-30">
-                  <!-- <div class="entry-header">
-                    <div class="post-thumb">
-                      <img
-                        class="img-fullwidth img-responsive"
-                        src="http://placehold.it/215x160"
-                        alt=""
-                      />
-                    </div>
-                  </div> -->
-                  <div class="clearfix"></div>
-                  <div class="entry-content">
-                    <h5 class="entry-title text-uppercase mt-0 text-center">
-                      <a class="font-15" href="#">Perempuan</a>
-                    </h5>
-                  </div>
-                </article>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-md-3 text-right text-black">Jantina :</div>
+          <div class="form-group text-black">
+            <label class="radio-inline">
+              <input type="radio" value="D" name="t3" />
+              Lelaki
+            </label>
+            <label class="radio-inline">
+              <input type="radio" value="W" name="t3" />
+              Perempuan</label
+            >
           </div>
         </div>
       </div>
-      <div
-        class="modal-footer text-center"
-        id="buttonCarian"
-        style="display: none"
-      >
-        <div class="row text-center">
-          <div class="col">
-            <a href="index-landing-program-list.html"
-              ><button class="btn btn-primary">Cari</button></a
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-danger" data-dismiss="modal">Tutup</button>
+            <a href="index-landing-program-list2.html"
+              ><button class="btn btn-primary">Seterusnya</button></a
             >
-            <button class="btn btn-primary" data-dismiss="modal">Tutup</button>
           </div>
         </div>
       </div>
@@ -1328,7 +1268,7 @@
 </div>
 <script>
   $(document).ready(function () {
-    // $("#myModal").modal("show");
+    $("#myModal").modal("show");
 
     $("#w3cIcon").click(function () {
       console.log($("#mySideCustomnav").css("display") == "none");
